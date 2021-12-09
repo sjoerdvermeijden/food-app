@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import Image from "next/image";
 
 import Location from "../Icons/Location";
 
@@ -6,7 +7,7 @@ import { BurgerWrapper } from "./Style";
 import { CartContext } from "../../context/CartContext";
 import { TotalContext } from "../../context/TotalContext";
 
-function Burger({ id, name, restaurant, description, price }) {
+function Burger({ id, name, restaurant, description, ingredients, price }) {
   const [cartItems, setCartItems] = useContext(CartContext);
   const [cartTotal, setCartTotal] = useContext(TotalContext);
 
@@ -28,21 +29,27 @@ function Burger({ id, name, restaurant, description, price }) {
     <>
       <BurgerWrapper>
         <div className="burger">
-          <h3 className="burger__title">{name}</h3>
-          <p className="burger__price">€{price}</p>
-          <p className="burger__description">{description}</p>
-          <p className="burger__location">
-            <div className="burger__icon">
-              <Location width="16px" height="16px" color="green" />
+          <figure className="burger__image">
+            <Image src="/hamburger.jpg" alt="Hamburger" objectFit="cover" width={100} height={100} quality="100" />
+          </figure>
+          <div className="burger__info">
+            <h3 className="burger__title">{name}</h3>
+            <p className="burger__price">€{price}</p>
+            <p className="burger__description">{description}</p>
+            <div className="burger__ingredients">
+              <ul className="burger__ingredient-list">
+                {ingredients.map((item) => {
+                  return <li key={Math.random()}>{item}</li>;
+                })}
+              </ul>
             </div>
-            <div className="burger__restaurant">{restaurant}</div>
-          </p>
-          <button
-            className="burger__add-to-cart"
-            onClick={(e) => addToCart(id)}
-          >
-            +
-          </button>
+            <button
+              className="burger__add-to-cart"
+              onClick={(e) => addToCart(id)}
+            >
+              +
+            </button>
+          </div>
         </div>
       </BurgerWrapper>
     </>

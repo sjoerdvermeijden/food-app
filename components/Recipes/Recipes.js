@@ -26,10 +26,10 @@ function Recipes() {
         <Wrap>
           <RecipeWrapper>
             <RecipeList>
-              <ul>
+              <ul className="recipe-list">
                 {hamburgers.map((hamburger) => {
                   return (
-                    <li key={hamburger.id}>
+                    <li className="recipe-list__item" key={hamburger.id}>
                       <Burger {...hamburger} />
                     </li>
                   );

@@ -11,13 +11,18 @@ function Cart() {
 
   useEffect(() => {
     const getItems = JSON.parse(localStorage.getItem("cartItems"));
+    const getCartTotal = JSON.parse(localStorage.getItem("cartTotal"));
     setCartItems(getItems);
+    setCartTotal(getCartTotal);
   }, []);
 
   useEffect(() => {
-    console.log(cartItems);
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   }, [cartItems]);
+  
+  useEffect(() => {
+    localStorage.setItem("cartTotal", JSON.stringify(cartTotal))
+  }, [cartTotal]);
 
   const addButton = (id) => {
     const newList = cartItems.map((item) => {

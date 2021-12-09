@@ -9,18 +9,21 @@ export const RecipeList = styled.div`
   display: flex;
   align-items: flex-start;
 
-  ul {
+  .recipe-list {
     list-style: none;
     margin-right: 40px;
+
+    &__item {
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
 
     &:not(:last-child) {
       margin-right: 20px;
     }
+
   }
 
-  li {
-    &:not(:last-child) {
-      margin-bottom: 20px;
-    }
-  }
 `;

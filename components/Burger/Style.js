@@ -5,31 +5,57 @@ export const BurgerWrapper = styled.div`
 
   .burger {
     position: relative;
+    display: flex;
+    align-items: flex-start;
     padding: 20px;
 
-    &__title {
-      
+    &__title,
+    &__price,
+    &__description,
+    &__ingredients,
+    &__location {
+
       &:not(:last-child) {
         margin-bottom: 10px;
+      }
+
+    }
+
+    &__image {
+      display: flex;
+      box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.75);
+
+      &:not(:last-child) {
+        margin-right: 20px;
       }
       
     }
 
     &__price {
       font-weight: bold;
-
-      &:not(:last-child) {
-        margin-bottom: 10px;
-      }
-
     }
     
-    &__description {
-      
+    &__description {}
+
+    &__label {
+      font-weight: bold;
+
       &:not(:last-child) {
-        margin-bottom: 10px;
+        margin-right: 8px;
       }
       
+    }
+
+    &__ingredients {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+    
+    &__ingredient-list {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
     }
     
     &__location {
@@ -38,7 +64,7 @@ export const BurgerWrapper = styled.div`
     }
 
     &__icon {
-      margin-top: 2px;
+      margin-top: 1px;
 
       &:not(:last-child) {
         margin-right: 5px;
