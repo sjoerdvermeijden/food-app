@@ -33,12 +33,7 @@ export const BurgerWrapper = styled.div`
     }
     
     &__restaurant {
-      font-weight: bold;
-
-      &:not(:last-child) {
-        margin-bottom: 10px;
-      }
-      
+      font-weight: bold;      
     }
 
     &__add-to-cart {
