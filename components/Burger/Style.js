@@ -32,8 +32,18 @@ export const BurgerWrapper = styled.div`
       
     }
     
-    &__restaurant {
+    &__location {
+      display: flex;
       font-weight: bold;      
+    }
+
+    &__icon {
+      margin-top: 2px;
+
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+
     }
 
     &__add-to-cart {
