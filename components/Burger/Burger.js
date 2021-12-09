@@ -2,30 +2,27 @@ import React, { useContext } from "react";
 
 import { BurgerWrapper } from "./Style";
 import { CartContext } from "../../context/CartContext";
+import { TotalContext } from "../../context/TotalContext";
 
-function Burger({
-  id,
-  name,
-  restaurant,
-  description,
-  price,
-}) {
-  
+function Burger({ id, name, restaurant, description, price }) {
   const [cartItems, setCartItems] = useContext(CartContext);
-  
+  const [cartTotal, setCartTotal] = useContext(TotalContext);
+
   const addToCart = (id) => {
-    
     if (cartItems.find((item) => id === item.id)) {
-      const cartItem = cartItems.find((item) => id === item.id)
-      cartItem.count++
+      const cartItem = cartItems.find((item) => id === item.id);
+      cartItem.count++;
     } else {
-      setCartItems([...cartItems, {id, name, price, description, restaurant, count: 1}])
+      setCartItems([
+        ...cartItems,
+        { id, name, price, description, restaurant, count: 1 },
+      ]);
+
+      setCartTotal(cartTotal + price)
     }
-    
   };
 
   return (
-
     <>
       <BurgerWrapper>
         <div className="burger">

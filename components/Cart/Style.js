@@ -61,6 +61,7 @@ export const CartList = styled.div`
   ul {
     list-style: none;
     margin-bottom: 20px;
+    border-bottom: 1px solid var(--gray);
 
     li {
       padding: 20px 0;
@@ -81,5 +82,14 @@ export const CartTotal = styled.div`
 
   li {
 
+  }
+`;
+
+
+export const EmtpyWrapper = styled.div`
+  
+  span {
+    display: inline-block;
+    font-weight: bold;
   }
 `;

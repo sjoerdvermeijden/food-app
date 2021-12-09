@@ -3,7 +3,7 @@ import React, { useContext, useEffect } from "react";
 import { CartContext } from "../../context/CartContext";
 import { TotalContext } from "../../context/TotalContext";
 
-import { CartWrapper, CartList, CartTotal } from "./Style";
+import { CartWrapper, CartList, CartTotal, EmtpyWrapper } from "./Style";
 
 function Cart() {
   const [cartItems, setCartItems] = useContext(CartContext);
@@ -23,6 +23,7 @@ function Cart() {
     const newList = cartItems.map((item) => {
       if (id === item.id) {
         item.count++;
+        setCartTotal(cartTotal + item.price)
       }
       return item;
     });
@@ -33,6 +34,7 @@ function Cart() {
     const newList = cartItems.map((item) => {
       if (id === item.id) {
         item.count--;
+        setCartTotal(cartTotal - item.price)
       }
       return item;
     });
@@ -49,7 +51,7 @@ function Cart() {
   return (
     <>
       <CartWrapper>
-        {cartItems.length > 0 && (
+        {cartItems.length > 0 ? (
           <>
             <CartList>
               <ul>
@@ -75,11 +77,15 @@ function Cart() {
             </CartList>
             <CartTotal>
               <ul>
-                <li>Totaal: €{cartTotal}</li>
+                <li>Totaal: €{cartTotal.toFixed(2)}</li>
               </ul>
             </CartTotal>
             <button className="cart-button">Afrekenen</button>
           </>
+        ) : (
+          <EmtpyWrapper>
+            <span>Voeg iets toe aan je mandje</span>
+          </EmtpyWrapper>
         )}
       </CartWrapper>
     </>
