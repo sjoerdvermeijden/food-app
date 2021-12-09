@@ -48,7 +48,7 @@ export const Burgers = [
   {
     id: 2,
     name: "Krabby Patty",
-    price: 19.99,
+    price: 14.99,
     restaurant: "Krusty Krab",
     web: "https://twitter.com/SpongeBob",
     description:
@@ -79,7 +79,7 @@ export const Burgers = [
   {
     id: 3,
     name: "The Good Burger",
-    price: 19.99,
+    price: 12.99,
     restaurant: "Good Burger",
     web: "https://en.wikipedia.org/wiki/Good_Burger",
     description:
@@ -136,7 +136,7 @@ export const Burgers = [
   {
     id: 5,
     name: "Barbie Burger",
-    price: 19.99,
+    price: 16.99,
     restaurant: "Flower Burger",
     web: "https://www.flowerburger.it/",
     description:
@@ -163,7 +163,7 @@ export const Burgers = [
   {
     id: 6,
     name: "Curry On My Wayward Bun",
-    price: 19.99,
+    price: 9.99,
     restaurant: "Bob's Burgers",
     web: "https://bobs-burgers.fandom.com/wiki/Burger_of_the_Day",
     description: "N/A",

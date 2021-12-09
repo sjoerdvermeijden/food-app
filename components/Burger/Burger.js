@@ -30,7 +30,7 @@ function Burger({ id, name, restaurant, description, price }) {
           <p className="burger__price">€{price}</p>
           <p className="burger__description">{description}</p>
           <p className="burger__restaurant">{restaurant}</p>
-          <button onClick={(e) => addToCart(id)}>Add to cart</button>
+          <button className="burger__add-to-cart" onClick={(e) => addToCart(id)}>+</button>
         </div>
       </BurgerWrapper>
     </>

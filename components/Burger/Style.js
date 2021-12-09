@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const BurgerWrapper = styled.div`
-  padding: 20px;
   background: var(--lightgray);
 
   .burger {
+    position: relative;
+    padding: 20px;
 
     &__title {
       
@@ -41,7 +42,14 @@ export const BurgerWrapper = styled.div`
     }
 
     &__add-to-cart {
-
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 8px 10px;
+      background: none;
+      border: 1px solid var(--darkgray);
+      border-radius: 0;
+      color: var(--darkgray);
     }
 
   }

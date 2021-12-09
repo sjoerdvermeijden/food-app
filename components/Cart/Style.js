@@ -87,6 +87,8 @@ export const CartTotal = styled.div`
 
 
 export const EmtpyWrapper = styled.div`
+  display: flex;
+  justify-content: center;
   
   span {
     display: inline-block;
