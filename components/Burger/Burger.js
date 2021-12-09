@@ -33,7 +33,7 @@ function Burger({ id, name, restaurant, description, price }) {
           <p className="burger__description">{description}</p>
           <p className="burger__location">
             <div className="burger__icon">
-              <Location width="16px" height="16px" color="red" />
+              <Location width="16px" height="16px" color="green" />
             </div>
             <div className="burger__restaurant">{restaurant}</div>
           </p>
