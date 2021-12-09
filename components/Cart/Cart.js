@@ -49,9 +49,7 @@ function Cart() {
   return (
     <>
       <CartWrapper>
-        {cartItems ? (
-          "Voeg iets toe aan je mandje!"
-        ) : (
+        {cartItems.length > 0 && (
           <>
             <CartList>
               <ul>
