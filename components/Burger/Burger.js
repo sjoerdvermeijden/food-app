@@ -13,7 +13,6 @@ function Burger({
   image,
   restaurant,
   description,
-  ingredients,
   price,
 }) {
   const [cartItems, setCartItems] = useContext(CartContext);
@@ -49,13 +48,6 @@ function Burger({
             <h3 className="burger__title">{name}</h3>
             <p className="burger__price">€{price}</p>
             <p className="burger__description">{description}</p>
-            <div className="burger__ingredients">
-              <ul className="burger__ingredient-list">
-                {ingredients.map((item) => {
-                  return <li key={Math.random()}>{item}</li>;
-                })}
-              </ul>
-            </div>
             <button
               className="burger__add-to-cart"
               onClick={(e) => addToCart(id)}
