@@ -56,7 +56,7 @@ function Cart() {
   return (
     <>
       <CartWrapper>
-        {cartItems.length > 0 || cartItems === null ? (
+        {(cartItems === null || cartItems.length > 0) ? (
           <>
             <CartList>
               <ul>
