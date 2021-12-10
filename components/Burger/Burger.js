@@ -1,8 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import Image from "next/image";
 
-import Location from "../Icons/Location";
-
 import { BurgerWrapper } from "./Style";
 import { CartContext } from "../../context/CartContext";
 import { TotalContext } from "../../context/TotalContext";
