@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import Image from "next/image";
 
 import Location from "../Icons/Location";
@@ -7,7 +7,7 @@ import { BurgerWrapper } from "./Style";
 import { CartContext } from "../../context/CartContext";
 import { TotalContext } from "../../context/TotalContext";
 
-function Burger({ id, name, restaurant, description, ingredients, price }) {
+function Burger({ id, name, image, restaurant, description, ingredients, price }) {
   const [cartItems, setCartItems] = useContext(CartContext);
   const [cartTotal, setCartTotal] = useContext(TotalContext);
 
@@ -30,7 +30,7 @@ function Burger({ id, name, restaurant, description, ingredients, price }) {
       <BurgerWrapper>
         <div className="burger">
           <figure className="burger__image">
-            <Image src="/hamburger.jpg" alt="Hamburger" objectFit="cover" width={100} height={100} quality="100" />
+            <Image src={image} alt="Hamburger" objectFit="cover" width={100} height={100} quality="100" />
           </figure>
           <div className="burger__info">
             <h3 className="burger__title">{name}</h3>

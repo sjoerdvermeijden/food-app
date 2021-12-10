@@ -18,6 +18,7 @@ export const GlobalStyle = createGlobalStyle`
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        line-height: 1.4;
     }
 
     body {
