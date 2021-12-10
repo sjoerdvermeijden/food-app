@@ -12,7 +12,6 @@ export const BurgerWrapper = styled.div`
     &__title,
     &__price,
     &__description,
-    &__ingredients,
     &__location {
 
       &:not(:last-child) {
@@ -45,22 +44,22 @@ export const BurgerWrapper = styled.div`
       }
       
     }
-
-    &__ingredients {
-      display: flex;
-      flex-wrap: wrap;
-      list-style: none;
-    }
-    
-    &__ingredient-list {
-      display: flex;
-      flex-wrap: wrap;
-      list-style: none;
-    }
     
     &__location {
       display: flex;
       font-weight: bold;      
+    }
+
+    &__cart-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30px;
+      height: 30px;
+      border: 1px solid var(--darkgray);
     }
 
     &__icon {
@@ -72,15 +71,28 @@ export const BurgerWrapper = styled.div`
 
     }
 
+    &__cart {
+      display: flex;
+    }
+
+    &__cart-container {
+      display: flex;
+      align-items: center;
+      
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+      
+    }
+    
     &__add-to-cart {
-      position: absolute;
-      right: 0;
-      top: 0;
-      padding: 8px 10px;
-      background: none;
-      border: 1px solid var(--darkgray);
-      border-radius: 0;
+      background: var(--red);
+    }
+
+    &__count {
+      display: inline-block;
       color: var(--darkgray);
+      padding: 3px 10px;
     }
 
   }

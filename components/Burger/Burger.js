@@ -7,14 +7,7 @@ import { BurgerWrapper } from "./Style";
 import { CartContext } from "../../context/CartContext";
 import { TotalContext } from "../../context/TotalContext";
 
-function Burger({
-  id,
-  name,
-  image,
-  restaurant,
-  description,
-  price,
-}) {
+function Burger({ id, name, image, restaurant, description, price, count }) {
   const [cartItems, setCartItems] = useContext(CartContext);
   const [cartTotal, setCartTotal] = useContext(TotalContext);
 
@@ -24,7 +17,8 @@ function Burger({
       cartItem.count++;
     } else {
       setCartItems([
-        ...cartItems, { id, name, price, description, restaurant, count: 1 }
+        ...cartItems,
+        { id, name, price, description, restaurant, count: 1 },
       ]);
     }
     setCartTotal(cartTotal + price);
@@ -48,12 +42,15 @@ function Burger({
             <h3 className="burger__title">{name}</h3>
             <p className="burger__price">€{price}</p>
             <p className="burger__description">{description}</p>
-            <button
-              className="burger__add-to-cart"
-              onClick={(e) => addToCart(id)}
-            >
-              +
-            </button>
+            <div className="burger__cart-toggle">+</div>
+            <div className="burger__cart">
+              <div className="burger__cart-container">
+                <button className="burger__remove">-</button>
+                <span className="burger__count">{count}</span>
+                <button className="burger__add">+</button>
+              </div>
+              <button className="burger__add-to-cart" onClick={(e) => addToCart(id)}>Add to cart</button>
+            </div>
           </div>
         </div>
       </BurgerWrapper>

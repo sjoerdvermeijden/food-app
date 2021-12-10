@@ -71,8 +71,8 @@ function Cart() {
                           <div className="cart-item__price">€{price}</div>
                         </div>
                         <div className="cart-item__buttons">
-                          <button onClick={(e) => addButton(id)}>+</button>
                           <button onClick={(e) => removeButton(id)}>-</button>
+                          <button onClick={(e) => addButton(id)}>+</button>
                         </div>
                       </div>
                     </li>

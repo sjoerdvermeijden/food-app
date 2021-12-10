@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
         --lightgray: #f5f5f5;
         --gray: #dadada;    
         --darkgray: #333333;    
+        --red: crimson;
     }
   
     * {
@@ -29,7 +30,6 @@ export const GlobalStyle = createGlobalStyle`
         border-width: 0;
         padding: 10px;
         background: var(--darkgray);
-        border-radius: 5px;
         color: white;
 
         &:hover,
