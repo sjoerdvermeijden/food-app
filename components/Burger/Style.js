@@ -79,6 +79,14 @@ export const BurgerWrapper = styled.div`
       display: flex;
       align-items: center;
       
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+      }
+      
       &:not(:last-child) {
         margin-right: 10px;
       }

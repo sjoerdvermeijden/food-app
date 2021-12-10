@@ -1,14 +1,17 @@
 import { CartComponent } from "../context/CartContext";
 import { TotalComponent } from "../context/TotalContext";
+import { HamburgerComponent } from "../context/HamburgerContext";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <TotalComponent>
-        <CartComponent>
-          <Component {...pageProps} />
-        </CartComponent>
-      </TotalComponent>
+      <HamburgerComponent>
+        <TotalComponent>
+          <CartComponent>
+            <Component {...pageProps} />
+          </CartComponent>
+        </TotalComponent>
+      </HamburgerComponent>
     </>
   );
 }

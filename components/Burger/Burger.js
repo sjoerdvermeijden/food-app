@@ -6,11 +6,13 @@ import Location from "../Icons/Location";
 import { BurgerWrapper } from "./Style";
 import { CartContext } from "../../context/CartContext";
 import { TotalContext } from "../../context/TotalContext";
+import { HamburgerContext } from "../../context/HamburgerContext";
 
 function Burger({ id, name, image, restaurant, description, price, count }) {
   const [cartItems, setCartItems] = useContext(CartContext);
   const [cartTotal, setCartTotal] = useContext(TotalContext);
-
+  const [burgerItems, setBurgerItems] = useContext(HamburgerContext)
+  
   const addToCart = (id) => {
     if (cartItems.find((item) => id === item.id)) {
       const cartItem = cartItems.find((item) => id === item.id);
@@ -23,6 +25,28 @@ function Burger({ id, name, image, restaurant, description, price, count }) {
     }
     setCartTotal(cartTotal + price);
   };
+
+  const counterAdd = (id) => {
+    const newList = burgerItems.map((item) => {
+      if (item.id === id) {
+        item.count++
+        console.log(item.count)
+      }
+      return item;
+    })
+    setBurgerItems(newList);
+  }
+  
+  const counterMinus = (id) => {
+    const newList = burgerItems.map((item) => {
+      if (item.id === id) {
+        item.count--
+        console.log(item.count)
+      }
+      return item;
+    })
+    setBurgerItems(newList);
+  }
 
   return (
     <>
@@ -45,9 +69,9 @@ function Burger({ id, name, image, restaurant, description, price, count }) {
             <div className="burger__cart-toggle">+</div>
             <div className="burger__cart">
               <div className="burger__cart-container">
-                <button className="burger__remove">-</button>
+                <button className="burger__remove" onClick={(e) => counterMinus(id)}>-</button>
                 <span className="burger__count">{count}</span>
-                <button className="burger__add">+</button>
+                <button className="burger__add" onClick={(e) => counterAdd(id)}>+</button>
               </div>
               <button className="burger__add-to-cart" onClick={(e) => addToCart(id)}>Add to cart</button>
             </div>
