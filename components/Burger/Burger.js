@@ -26,6 +26,8 @@ function Burger({
     const newList = burgerItems.map((item) => {
       if (item.id === id) {
         item.toggle = !item.toggle;
+      } else {
+        item.toggle = false
       }
       return item;
     });
@@ -139,7 +141,6 @@ function Burger({
                 className="burger__cart-toggle"
                 onClick={(e) => cartFunction(id)}
               >
-                <span></span>
                 <span></span>
                 <span></span>
               </div>
