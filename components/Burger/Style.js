@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const BurgerWrapper = styled.div`
   background: var(--lightgray);
@@ -13,7 +13,6 @@ export const BurgerWrapper = styled.div`
     &__price,
     &__description,
     &__location {
-
       &:not(:last-child) {
         margin-bottom: 10px;
       }
@@ -22,19 +21,21 @@ export const BurgerWrapper = styled.div`
 
     &__image {
       display: flex;
-      box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.75);
+      flex-shrink: 0;
+      box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.75);
 
       &:not(:last-child) {
         margin-right: 20px;
       }
-      
+
     }
 
     &__price {
       font-weight: bold;
     }
-    
-    &__description {}
+
+    &__description {
+    }
 
     &__label {
       font-weight: bold;
@@ -42,12 +43,12 @@ export const BurgerWrapper = styled.div`
       &:not(:last-child) {
         margin-right: 8px;
       }
-      
+
     }
-    
+
     &__location {
       display: flex;
-      font-weight: bold;      
+      font-weight: bold;
     }
 
     &__cart-toggle {
@@ -65,7 +66,6 @@ export const BurgerWrapper = styled.div`
       &:focus {
         cursor: pointer;
       }
-      
     }
 
     &__icon {
@@ -74,31 +74,38 @@ export const BurgerWrapper = styled.div`
       &:not(:last-child) {
         margin-right: 5px;
       }
-
     }
 
     &__cart {
       display: flex;
     }
 
-    &__cart-container {
+  }
+
+  .burger-cart {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: var(--gray);
+
+    &__container {
       display: flex;
       align-items: center;
-      
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+
       button {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
       }
-      
-      &:not(:last-child) {
-        margin-right: 10px;
-      }
-      
+
     }
-    
+
     &__add-to-cart {
       background: var(--red);
     }
