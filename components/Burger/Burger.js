@@ -56,15 +56,9 @@ function Burger({
   const addToCart = (id) => {
 
     if (cartItems.length > 0) {
-      if (cartItems.find((item) => id === item.id)) {
-        const cartItem = cartItems.find((item) => id === item.id);
-        cartItem.count++;
-      }
+      
     } else {
-      setCartItems([
-        ...cartItems,
-        { id, name, price, description, restaurant, count },
-      ]);
+      setCartItems([{ id, name, price, description, restaurant, count }]);
       setCartTotal(cartTotal + (count * price));
     }
 
