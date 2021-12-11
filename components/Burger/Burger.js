@@ -71,7 +71,7 @@ function Burger({
       <BurgerWrapper>
         {toggle ? (
           <>
-            <div className="burger">
+            <div className="burger toggled">
               <figure className="burger__image">
                 <Image
                   src={image}
@@ -90,7 +90,6 @@ function Burger({
                   className="burger__cart-toggle"
                   onClick={(e) => cartFunction(id)}
                 >
-                  <span></span>
                   <span></span>
                   <span></span>
                 </div>
