@@ -62,6 +62,24 @@ export const BurgerWrapper = styled.div`
       height: 30px;
       border: 1px solid var(--darkgray);
 
+      span {
+        position: absolute;
+        left: 7px;
+        top: 13px;
+        display: inline-block;
+        width: 12px;
+        height: 1px;
+        background: var(--darkgray);
+
+        &:nth-child(2) {
+          transform: rotate(90deg);
+        }
+        
+        &:nth-child(3) {
+          display: none;
+        }
+      }
+
       &:hover,
       &:focus {
         cursor: pointer;

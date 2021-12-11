@@ -90,7 +90,9 @@ function Burger({
                   className="burger__cart-toggle"
                   onClick={(e) => cartFunction(id)}
                 >
-                  +
+                  <span></span>
+                  <span></span>
+                  <span></span>
                 </div>
               </div>
             </div>
@@ -103,7 +105,10 @@ function Burger({
                   -
                 </button>
                 <span className="burger-cart__count">{count}</span>
-                <button className="burger-cart__add" onClick={(e) => counterAdd(id)}>
+                <button
+                  className="burger-cart__add"
+                  onClick={(e) => counterAdd(id)}
+                >
                   +
                 </button>
               </div>
@@ -122,8 +127,8 @@ function Burger({
                 src={image}
                 alt="Hamburger"
                 objectFit="cover"
-                width={150}
-                height={150}
+                width={100}
+                height={100}
                 quality="100"
               />
             </figure>
@@ -135,7 +140,9 @@ function Burger({
                 className="burger__cart-toggle"
                 onClick={(e) => cartFunction(id)}
               >
-                +
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
             </div>
           </div>
