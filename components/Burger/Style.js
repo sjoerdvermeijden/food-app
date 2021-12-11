@@ -64,8 +64,8 @@ export const BurgerWrapper = styled.div`
 
       span {
         position: absolute;
-        left: 7px;
-        top: 13px;
+        left: 8px;
+        top: 14px;
         display: inline-block;
         width: 12px;
         height: 1px;
