@@ -22,12 +22,14 @@ function Burger({
 
   const [cartToggle, setCartToggle] = useState(false);
 
+  const itemPrice = count * price;
+
   const cartFunction = (id) => {
     const newList = burgerItems.map((item) => {
       if (item.id === id) {
         item.toggle = !item.toggle;
       } else {
-        item.toggle = false
+        item.toggle = false;
       }
       return item;
     });
@@ -64,8 +66,7 @@ function Burger({
     } else {
       setCartItems([{ id, name, price, description, restaurant, count }]);
     }
-    setCartTotal(cartTotal + (count * price));
-
+    setCartTotal(cartTotal + count * price);
   };
 
   return (
@@ -98,27 +99,29 @@ function Burger({
               </div>
             </div>
             <div className="burger-cart">
-              <div className="burger-cart__container">
+              <div className="burger-cart__inner">
+                <div className="burger-cart__container">
+                  <button
+                    className="burger-cart__remove"
+                    onClick={(e) => counterMinus(id)}
+                  >
+                    -
+                  </button>
+                  <span className="burger-cart__count">{count}</span>
+                  <button
+                    className="burger-cart__add"
+                    onClick={(e) => counterAdd(id)}
+                  >
+                    +
+                  </button>
+                </div>
                 <button
-                  className="burger-cart__remove"
-                  onClick={(e) => counterMinus(id)}
+                  className="burger-cart__add-to-cart"
+                  onClick={(e) => addToCart(id)}
                 >
-                  -
-                </button>
-                <span className="burger-cart__count">{count}</span>
-                <button
-                  className="burger-cart__add"
-                  onClick={(e) => counterAdd(id)}
-                >
-                  +
+                  €{itemPrice.toFixed(2)}
                 </button>
               </div>
-              <button
-                className="burger-cart__add-to-cart"
-                onClick={(e) => addToCart(id)}
-              >
-                Add to cart
-              </button>
             </div>
           </>
         ) : (

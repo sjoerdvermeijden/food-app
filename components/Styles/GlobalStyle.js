@@ -32,6 +32,7 @@ export const GlobalStyle = createGlobalStyle`
         padding: 10px;
         background: var(--darkgray);
         color: white;
+        font-size: 16px;
 
         &:hover,
         &:focus {

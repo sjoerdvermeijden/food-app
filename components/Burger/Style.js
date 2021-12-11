@@ -111,9 +111,16 @@ export const BurgerWrapper = styled.div`
 
   .burger-cart {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     padding: 20px;
     background: var(--gray);
+
+    &__inner {
+      display: flex;
+      align-items: center;
+      width: 400px;
+    }
 
     &__container {
       display: flex;
@@ -127,14 +134,17 @@ export const BurgerWrapper = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
       }
 
     }
 
     &__add-to-cart {
       background: var(--red);
+      font-weight: bold;
+      font-size: 16px;
+      flex-grow: 1;
     }
 
     &__count {
