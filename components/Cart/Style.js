@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const CartWrapper = styled.div`
+  position: sticky;
+  top: 40px;
   padding: 20px;
   background: var(--lightgray);
   min-width: 400px;

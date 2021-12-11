@@ -60,6 +60,12 @@ export const BurgerWrapper = styled.div`
       width: 30px;
       height: 30px;
       border: 1px solid var(--darkgray);
+
+      &:hover,
+      &:focus {
+        cursor: pointer;
+      }
+      
     }
 
     &__icon {
