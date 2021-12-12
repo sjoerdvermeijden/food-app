@@ -62,6 +62,7 @@ function Burger({
     burgerItems.map((item) => {
       if (id === item.id) {
         setBurgercount(item.count)
+        item.toggle = !item.toggle
       }
     })
 
