@@ -9,7 +9,7 @@ function Header() {
       <HeaderWrapper>
         <Wrap>
           <div className="header-inner">
-            <h1 className="logo">Good Burgers.</h1>
+            <h1 className="logo">Good Burgers</h1>
           </div>
         </Wrap>
       </HeaderWrapper>

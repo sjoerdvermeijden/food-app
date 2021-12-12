@@ -19,8 +19,7 @@ function Burger({
   const [cartItems, setCartItems] = useContext(CartContext);
   const [cartTotal, setCartTotal] = useContext(TotalContext);
   const [burgerItems, setBurgerItems] = useContext(HamburgerContext);
-
-  const [cartToggle, setCartToggle] = useState(false);
+  const [burgerCount, setBurgercount] = useState(0);
 
   const itemPrice = count * price;
 
@@ -28,8 +27,10 @@ function Burger({
     const newList = burgerItems.map((item) => {
       if (item.id === id) {
         item.toggle = !item.toggle;
+        setBurgercount(0)
       } else {
         item.toggle = false;
+        setBurgercount(0)
       }
       return item;
     });
@@ -58,11 +59,17 @@ function Burger({
   };
 
   const addToCart = (id) => {
+    burgerItems.map((item) => {
+      if (id === item.id) {
+        setBurgercount(item.count)
+      }
+    })
+
     if (cartItems.length > 0) {
       if (cartItems.find((item) => id === item.id)) {
         const cartItem = cartItems.find((item) => id === item.id);
-        cartItem.count++;
-        console.log(count)
+        const totalCount = cartItem.count + burgerCount;
+        cartItem.count = totalCount
       } else {
         setCartItems([...cartItems, { id, name, price, description, restaurant, count }]);
       }
