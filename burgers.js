@@ -9,15 +9,6 @@ export const Burgers = [
     restaurant: "Honest Burgers",
     web: "www.honestburgers.co.uk",
     description: "A mouth-watering honest beef burger",
-    ingredients: [
-      "beef",
-      "american cheese",
-      "burger sauce",
-      "french mustard",
-      "pickes",
-      "onion",
-      "lettuce",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -39,7 +30,6 @@ export const Burgers = [
     restaurant: "Mooshies",
     web: "www.veganburger.org",
     description: "Spicy vegan burger with jackfruit",
-    ingredients: ["jackfruit", "coleslaw", "gluten free bun"],
     addresses: [
       {
         addressId: 0,
@@ -62,18 +52,6 @@ export const Burgers = [
     web: "https://twitter.com/SpongeBob",
     description:
       "The only people who don't like a Krabby Patty have never tasted one.",
-    ingredients: [
-      "bun",
-      "patty",
-      "ketchup",
-      "mustard",
-      "pickles",
-      "onions",
-      "lettuce",
-      "cheese",
-      "tomato",
-      "bun",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -96,14 +74,6 @@ export const Burgers = [
     web: "https://en.wikipedia.org/wiki/Good_Burger",
     description:
       "Welcome to Good Burger, home of the Good Burger, can I take your order?",
-    ingredients: [
-      "bun",
-      "tomato",
-      "Ed's secret sauce",
-      "lettuce",
-      "onions",
-      "cheese",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -126,17 +96,6 @@ export const Burgers = [
     web: "https://www.max.se/maten/meny/burgare/crunchy-nacho-burger/",
     description:
       "The best combination of crunchiness and softness, all in one single burger",
-    ingredients: [
-      "sesame bun",
-      "salsa",
-      "cheddar",
-      "nachos",
-      "beef",
-      "tomato",
-      "pickled onion",
-      "lettuce",
-      "jalapeño mayonnaise",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -159,14 +118,6 @@ export const Burgers = [
     web: "https://www.flowerburger.it/",
     description:
       "From a pink explosion was born Barbie Burger, a special edition in partnership with Mattel",
-    ingredients: [
-      "pink bun",
-      "lentil and beetroot burger",
-      "tomatoes",
-      "gentilina salad",
-      "barbie hummus",
-      "barbie mayo",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -188,7 +139,6 @@ export const Burgers = [
     restaurant: "Bob's Burgers",
     web: "https://bobs-burgers.fandom.com/wiki/Burger_of_the_Day",
     description: "N/A",
-    ingredients: ["beef", "curry", "bun"],
     addresses: [
       {
         addressId: 0,
@@ -210,13 +160,6 @@ export const Burgers = [
     restaurant: "Burgermeister",
     web: "https://burger-meister.de",
     description: "Fast food joint located in a public toilet? Why on earth?!",
-    ingredients: [
-      "2 x meat",
-      "2 x cheese",
-      "bacon",
-      "barbequesauce",
-      "jalapenos",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -247,14 +190,6 @@ export const Burgers = [
     web: "https://www.cookwithmanali.com/vegetarian-burger-indian-style/",
     description:
       "With summer around the corner, I had to share a vegetarian burger recipe with you guys. Actually I plan to share more in the next month but I thought I will start with this Indian style Vegetarian Burger aka Masala Burger!",
-    ingredients: [
-      "american cheese",
-      "burger sauce",
-      "french mustard",
-      "pickes",
-      "onion",
-      "Veggies",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -276,15 +211,6 @@ export const Burgers = [
     restaurant: "Sky City Hamilton",
     web: "https://skycityhamilton.co.nz/eat-drink/eat-burger/",
     description: "A Christmas themed burger",
-    ingredients: [
-      "chicken thigh",
-      "champagne ham",
-      "sage and onion stuffing",
-      "gravy mash",
-      "lettuce",
-      "tomato",
-      "cranberry sauce",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -306,17 +232,6 @@ export const Burgers = [
     restaurant: "Yankys",
     web: "http://yankyslambton.co.za/menu/",
     description: "Delicious steak burger",
-    ingredients: [
-      "steak",
-      "BBQ sauce",
-      "bacon",
-      "egg",
-      "cheese",
-      "lettuce",
-      "tomato",
-      "onion",
-      "gerkins",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -338,18 +253,6 @@ export const Burgers = [
     restaurant: "Yankys",
     web: "http://yankyslambton.co.za/menu/",
     description: "Massive meaty burger - the size of a dinner plate",
-    ingredients: [
-      "250g patty",
-      "bacon",
-      "cheese",
-      "2 eggs",
-      "steak",
-      "BBQ sauce",
-      "lettuce",
-      "tomato",
-      "onion",
-      "gerkins",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -371,13 +274,6 @@ export const Burgers = [
     restaurant: "Meat Mission",
     web: "http://meatliquor.com/",
     description: "Large, messy, super tasty buffalo chicken burger",
-    ingredients: [
-      "Fried chicken breast",
-      "House-made buffalo sauce",
-      "Lettuce",
-      "Red onions",
-      "Blue cheese sauce",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -399,15 +295,6 @@ export const Burgers = [
     restaurant: "Burgeramt",
     web: "https://www.burgeramt.com/",
     description: "Perfect when you need a day off from your workout routine",
-    ingredients: [
-      "double beef",
-      "chilli-cheese sauce",
-      "2 slices cheddar cheese",
-      "crispy bacon stripes",
-      "nachos",
-      "mayonnaise",
-      "mustard",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -430,16 +317,6 @@ export const Burgers = [
     web: "https://www.byron.co.uk/",
     description:
       "Beyond Meat patty, crispy onions, mushrooms, pickled red onions, lettuce American mustard, truffle ‘cheese’ fondue, truffle ‘mayo’",
-    ingredients: [
-      "1/4 Beyond Meat patty",
-      "crispy onions",
-      "sauteed mushrooms",
-      "pickled red onions",
-      "lettuce",
-      "American mustard",
-      "truffle vegan cheese fondue",
-      "truffle vegan mayo",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -469,13 +346,6 @@ export const Burgers = [
     restaurant: "Aloette",
     web: "https://aloetterestaurant.com/",
     description: "Haute cuisine meets cravings for cheeseburgers.",
-    ingredients: [
-      "6oz beef patty, served medium",
-      "griddled beaufort cheese",
-      "cheddar mayo",
-      "shredded lettuce",
-      "potato roll",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -497,16 +367,6 @@ export const Burgers = [
     restaurant: "Fresh Plant Powered",
     web: "https://freshplantpowered.com/",
     description: "Vegan burger made from whole, natural ingredients.",
-    ingredients: [
-      "house-made grain burger",
-      "bbq sauce",
-      "quinoa onion rings",
-      "vegan garlic mayo",
-      "napa cabbage",
-      "banana chillies",
-      "tomato",
-      "lettuce",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -576,15 +436,6 @@ export const Burgers = [
     restaurant: "Carroll's Pub Worms",
     web: "https://www.carrolls-pub-worms.de/",
     description: "Tasty black angus beef burger.",
-    ingredients: [
-      "Irish black angus beef",
-      "tomato",
-      "lettuce",
-      "caramelized onions",
-      "pickles",
-      "cheddar cheese",
-      "tomato relish",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -606,7 +457,6 @@ export const Burgers = [
     restaurant: "Burger King India",
     web: "www.mojitto.com",
     description: "Burger a day keeps the fat away",
-    ingredients: ["bread", "maida", "chick", "patty"],
     addresses: [
       {
         addressID: 0,
@@ -627,15 +477,6 @@ export const Burgers = [
     restaurant: "Slab Burgers",
     web: "www.slabburgers.com",
     description: "taste of hormone-free running cows",
-    ingredients: [
-      "beef",
-      "caramelized onions",
-      "slab sauce",
-      "pickles",
-      "mushrooms",
-      "tomato",
-      "lettuce",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -657,18 +498,6 @@ export const Burgers = [
     restaurant: "Du Brown Burger Café",
     web: "https://www.dubrown.com/",
     description: "Home of the no bullshit burger",
-    ingredients: [
-      "beef",
-      "bacon",
-      "caramelized onions",
-      "cheddar cheese",
-      "barbecue sauce",
-      "onion rings",
-      "jalepeños",
-      "tomato",
-      "lettuce",
-      "chipote mayonaise",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -690,14 +519,6 @@ export const Burgers = [
     restaurant: "Melting Potes Nantes",
     web: "https://www.meltingpotesnantes.com/",
     description: "Home of the no bullshit burger",
-    ingredients: [
-      "beef",
-      "poutine",
-      "raclette cheese",
-      "honey mustard sauce",
-      "goats cheese",
-      "crispy onions",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -719,14 +540,6 @@ export const Burgers = [
     restaurant: "Big Fernand",
     web: "https://bigfernand.com/",
     description: "L'atelier du Hamburgé - The burger workshop",
-    ingredients: [
-      "beef",
-      "sundried tomates",
-      "tatar sauce",
-      "confit onions",
-      "blue cheese",
-      "smokey bacon",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -788,14 +601,6 @@ export const Burgers = [
     restaurant: "PNY Burger",
     web: "https://pnyburger.com/",
     description: "Home of the no bullshit burger",
-    ingredients: [
-      "beef",
-      "poutine",
-      "raclette cheese",
-      "honey mustard sauce",
-      "goats cheese",
-      "crispy onions",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -849,17 +654,6 @@ export const Burgers = [
     restaurant: "231 East Street",
     web: "https://www.231-east.fr/",
     description: "True New York style burger in France",
-    ingredients: [
-      "beef",
-      "smoked bacon",
-      "chicken",
-      "veggie burgers",
-      "brioche bun",
-      "honey mustard sauce",
-      "onion chutney",
-      "pepper sauce",
-      "avacado",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -914,16 +708,6 @@ export const Burgers = [
     web: "www.veggiediner.com",
     description:
       "a hearty veggie burger with a kick that goes great with sweet potato fries",
-    ingredients: [
-      "spicy black bean veggie patty",
-      "sautéed onions",
-      "mushrooms",
-      "spinach",
-      "tomato",
-      "fried jalapeño",
-      "cheddar sauce",
-      "creole mustard",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -953,13 +737,6 @@ export const Burgers = [
     restaurant: "Whataburger",
     web: "www.whataburger.com",
     description: "burger with hatch green chiles, bacon and cheese",
-    ingredients: [
-      "beef",
-      "cheese",
-      "bacon",
-      "hatch green chiles",
-      "mayonnaise",
-    ],
     addresses: [
       {
         addressId: 0,
@@ -981,15 +758,6 @@ export const Burgers = [
     restaurant: "The Street",
     web: "www.thestreet.cz",
     description: "American, Bar, International, European, Vegetarian Friendly",
-    ingredients: [
-      "beef",
-      "cheddar cheese",
-      "blue cheese",
-      "onion",
-      "mozzarella",
-      "bacon",
-      "lettuce",
-    ],
     addresses: [
       {
         addressId: 0,
