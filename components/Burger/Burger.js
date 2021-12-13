@@ -113,29 +113,34 @@ function Burger({
                 </div>
               </div>
             </div>
-            <div className="burger-cart">
-              <div className="burger-cart__inner">
-                <div className="burger-cart__container">
+            <div className="burger-checkout">
+              <div className="burger-toppings">
+                
+              </div>
+              <div className="burger-cart">
+                <div className="burger-cart__inner">
+                  <div className="burger-cart__container">
+                    <button
+                      className="burger-cart__remove"
+                      onClick={(e) => counterMinus(id)}
+                    >
+                      -
+                    </button>
+                    <span className="burger-cart__count">{burgerCount}</span>
+                    <button
+                      className="burger-cart__add"
+                      onClick={(e) => counterAdd(id)}
+                    >
+                      +
+                    </button>
+                  </div>
                   <button
-                    className="burger-cart__remove"
-                    onClick={(e) => counterMinus(id)}
+                    className="burger-cart__add-to-cart"
+                    onClick={(e) => addToCart(id)}
                   >
-                    -
-                  </button>
-                  <span className="burger-cart__count">{burgerCount}</span>
-                  <button
-                    className="burger-cart__add"
-                    onClick={(e) => counterAdd(id)}
-                  >
-                    +
+                    €{itemPrice.toFixed(2)}
                   </button>
                 </div>
-                <button
-                  className="burger-cart__add-to-cart"
-                  onClick={(e) => addToCart(id)}
-                >
-                  €{itemPrice.toFixed(2)}
-                </button>
               </div>
             </div>
           </>
