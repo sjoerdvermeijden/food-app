@@ -73,6 +73,7 @@ function Burger({
         const cartItem = cartItems.find((item) => id === item.id);
         const totalCount = cartItem.count + burgerCount;
         cartItem.count = totalCount
+        setCartItems([...cartItems]);
       } else {
         setCartItems([...cartItems, { id, name, price, description, restaurant, count }]);
       }
