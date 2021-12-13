@@ -27,31 +27,34 @@ function Burger({
     const newList = burgerItems.map((item) => {
       if (item.id === id) {
         item.toggle = !item.toggle;
-        setBurgercount(0)
+        setBurgercount(1)
       } else {
         item.toggle = false;
-        setBurgercount(0)
+        setBurgercount(1)
       }
       return item;
     });
-
     setBurgerItems(newList);
+    console.log(burgerItems)
   };
-
+  
   const counterAdd = (id) => {
     const newList = burgerItems.map((item) => {
       if (item.id === id) {
         item.count++;
+        setBurgercount(burgerCount + 1)
       }
       return item;
     });
     setBurgerItems(newList);
+    console.log(burgerItems)
   };
-
+  
   const counterMinus = (id) => {
     const newList = burgerItems.map((item) => {
-      if (item.id === id) {
+      if (item.id === id && item.count > 1) {
         item.count--;
+        setBurgercount(burgerCount - 1)
       }
       return item;
     });
@@ -59,9 +62,9 @@ function Burger({
   };
 
   const addToCart = (id) => {
+
     burgerItems.map((item) => {
       if (id === item.id) {
-        setBurgercount(item.count)
         item.toggle = !item.toggle
       }
     })
@@ -118,7 +121,7 @@ function Burger({
                   >
                     -
                   </button>
-                  <span className="burger-cart__count">{count}</span>
+                  <span className="burger-cart__count">{burgerCount}</span>
                   <button
                     className="burger-cart__add"
                     onClick={(e) => counterAdd(id)}
