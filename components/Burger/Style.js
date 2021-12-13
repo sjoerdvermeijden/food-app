@@ -73,20 +73,20 @@ export const BurgerWrapper = styled.div`
 
         &:nth-child(1) {
             
-            .toggled & { 
-              transform: rotate(45deg);
-            }
+          .toggled & { 
+            transform: rotate(45deg);
+          }
+        }
+
+        &:nth-child(2) {
+          transform: rotate(90deg);
+          
+          .toggled & {
+            transform: rotate(-45deg);
           }
 
-          &:nth-child(2) {
-            transform: rotate(90deg);
-            
-            .toggled & {
-              transform: rotate(-45deg);
-            }
-            
-          }
-
+        }
+        
       }
 
       &:hover,

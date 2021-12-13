@@ -28,6 +28,8 @@ function Burger({
       if (item.id === id) {
         item.toggle = !item.toggle;
         setBurgercount(1)
+      } else {
+        item.toggle = false;
       }
       return item;
     });
