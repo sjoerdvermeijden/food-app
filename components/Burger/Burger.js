@@ -20,8 +20,11 @@ function Burger({
   const [cartTotal, setCartTotal] = useContext(TotalContext);
   const [burgerItems, setBurgerItems] = useContext(HamburgerContext);
   const [burgerCount, setBurgercount] = useState(0);
+  const [burgerPrice, setBurgerPrice] = useState(0)
 
-  const itemPrice = count * price;
+  useEffect(() => {
+    setBurgerPrice(price);
+  }, [])
 
   const cartToggle = (id) => {
     const newList = burgerItems.map((item) => {
@@ -40,7 +43,10 @@ function Burger({
     const newList = burgerItems.map((item) => {
       if (item.id === id) {
         item.count++;
+
         setBurgercount(burgerCount + 1)
+        const burgerPrice = price * (burgerCount + 1);
+        setBurgerPrice(burgerPrice)
       }
       return item;
     });
@@ -51,7 +57,10 @@ function Burger({
     const newList = burgerItems.map((item) => {
       if (item.id === id && item.count > 1) {
         item.count--;
+
         setBurgercount(burgerCount - 1)
+        const burgerPrice = price * (burgerCount + 1);
+        setBurgerPrice(burgerPrice)
       }
       return item;
     });
@@ -73,14 +82,16 @@ function Burger({
         const cartItem = cartItems.find((item) => id === item.id);
         const totalCount = cartItem.count + burgerCount;
         cartItem.count = totalCount
-        setCartItems([...cartItems]);
+        setBurgerPrice(price)
+        console.log(price)
       } else {
         setCartItems([...cartItems, { id, name, price, description, restaurant, count }]);
+        setBurgerPrice(price)
+        console.log(price)
       }
     } else {
       setCartItems([{ id, name, price, description, restaurant, count }]);
     }
-
     setCartTotal(cartTotal + count * price);
   };
 
@@ -134,7 +145,7 @@ function Burger({
                   className="burger-cart__add-to-cart"
                   onClick={(e) => addToCart(id)}
                 >
-                  €{itemPrice.toFixed(2)}
+                  €{burgerPrice.toFixed(2)}
                 </button>
               </div>
             </div>
