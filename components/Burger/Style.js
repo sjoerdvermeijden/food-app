@@ -4,10 +4,32 @@ export const BurgerWrapper = styled.div`
   background: var(--lightgray);
 
   .burger {
+    @root: &;
+
     position: relative;
     display: flex;
     align-items: flex-start;
     padding: 20px;
+
+    &.toggled {
+
+      .burger__cart-toggle {
+
+        span {
+
+          &:nth-child(1) {
+            transform: rotate(-45deg);
+          }
+
+          &:nth-child(2) {
+            transform: rotate(45deg);
+          }
+
+        }
+
+      }
+
+    }
 
     &__title,
     &__price,
@@ -70,21 +92,9 @@ export const BurgerWrapper = styled.div`
         width: 12px;
         height: 1px;
         background: var(--darkgray);
-
-        &:nth-child(1) {
-            
-          .toggled & { 
-            transform: rotate(45deg);
-          }
-        }
-
+        
         &:nth-child(2) {
           transform: rotate(90deg);
-          
-          .toggled & {
-            transform: rotate(-45deg);
-          }
-
         }
         
       }
