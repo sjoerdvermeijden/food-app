@@ -4,6 +4,24 @@ export const Burgers = [
     name: "Tribute Burger",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          }
+        ]
+      }
+    ],
     toggle: false,
     image: '/another-burger.jpg',
     restaurant: "Honest Burgers",
@@ -25,6 +43,24 @@ export const Burgers = [
     name: "Pulled Mooshie",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/hamburger.jpg',
     restaurant: "Mooshies",
@@ -46,6 +82,24 @@ export const Burgers = [
     name: "Krabby Patty",
     price: 14.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/hamburger.jpg',
     restaurant: "Krusty Krab",
@@ -68,6 +122,24 @@ export const Burgers = [
     name: "The Good Burger",
     price: 12.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/spicey-burger.jpg',
     restaurant: "Good Burger",
@@ -90,6 +162,24 @@ export const Burgers = [
     name: "Crunchy Nacho Burger",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/hamburger.jpg',
     restaurant: "Max Burgers",
@@ -112,6 +202,24 @@ export const Burgers = [
     name: "Barbie Burger",
     price: 16.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/hamburger.jpg',
     restaurant: "Flower Burger",
@@ -134,6 +242,24 @@ export const Burgers = [
     name: "Curry On My Wayward Bun",
     price: 9.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/hamburger.jpg',
     restaurant: "Bob's Burgers",
@@ -155,6 +281,24 @@ export const Burgers = [
     name: "MEISTER ALLER KLASSEN",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/hamburger.jpg',
     restaurant: "Burgermeister",
@@ -184,6 +328,24 @@ export const Burgers = [
     name: "Vegetarian Burger (Indian Style)",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/spicey-burger.jpg',
     restaurant: "Indian Burgers",
@@ -206,6 +368,24 @@ export const Burgers = [
     name: "Fat Santa",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/hamburger.jpg',
     restaurant: "Sky City Hamilton",
@@ -227,6 +407,24 @@ export const Burgers = [
     name: "Blondie",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/hamburger.jpg',
     restaurant: "Yankys",
@@ -248,6 +446,24 @@ export const Burgers = [
     name: "Monster Burger",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/spicey-burger.jpg',
     restaurant: "Yankys",
@@ -269,6 +485,24 @@ export const Burgers = [
     name: "Buffalo chicken burger",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/hamburger.jpg',
     restaurant: "Meat Mission",
@@ -290,6 +524,24 @@ export const Burgers = [
     name: "Cheatday Burger",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/hamburger.jpg',
     restaurant: "Burgeramt",
@@ -311,6 +563,24 @@ export const Burgers = [
     name: "The Truffler (vegan)",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/hamburger.jpg',
     restaurant: "Byron Burgers",
@@ -341,6 +611,24 @@ export const Burgers = [
     name: "Aloette Buger",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/hamburger.jpg',
     restaurant: "Aloette",
@@ -362,6 +650,24 @@ export const Burgers = [
     name: "BBQ Burger",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/spicey-burger.jpg',
     restaurant: "Fresh Plant Powered",
@@ -431,6 +737,24 @@ export const Burgers = [
     name: "Carroll's Cheese Burger",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/hamburger.jpg',
     restaurant: "Carroll's Pub Worms",
@@ -452,6 +776,24 @@ export const Burgers = [
     name: "Mojitto Burger",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/hamburger.jpg',
     restaurant: "Burger King India",
@@ -472,6 +814,24 @@ export const Burgers = [
     name: "Double Slab Burger",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/hamburger.jpg',
     restaurant: "Slab Burgers",
@@ -493,6 +853,24 @@ export const Burgers = [
     name: "Du Brown",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/hamburger.jpg',
     restaurant: "Du Brown Burger Café",
@@ -514,6 +892,24 @@ export const Burgers = [
     name: "Melting Potes",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/hamburger.jpg',
     restaurant: "Melting Potes Nantes",
@@ -535,6 +931,24 @@ export const Burgers = [
     name: "Big Fernand",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/spicey-burger.jpg',
     restaurant: "Big Fernand",
@@ -596,6 +1010,24 @@ export const Burgers = [
     name: "PNY Burger",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/another-burger.jpg',
     restaurant: "PNY Burger",
@@ -649,6 +1081,24 @@ export const Burgers = [
     name: "231 East",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/hamburger.jpg',
     restaurant: "231 East Street",
@@ -702,6 +1152,24 @@ export const Burgers = [
     name: "Cajun Black Bean Burger",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/another-burger.jpg',
     restaurant: "The Chicago Diner",
@@ -732,6 +1200,24 @@ export const Burgers = [
     name: "Hatch Green Chile Bacon Burger",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/hamburger.jpg',
     restaurant: "Whataburger",
@@ -753,6 +1239,24 @@ export const Burgers = [
     name: "The Street Burgers and Coctail Bar Prague 1",
     price: 19.99,
     count: 1,
+    additives: [
+      {
+        toppins: [
+          {
+            topping: 'pepperoni',
+            price: 0.50,
+          },
+          {
+            topping: 'salami',
+            price: 0.50,
+          },
+          {
+            topping: 'chicken',
+            price: 0.50,
+          },
+        ]
+      }
+    ],
     toggle: false,
     image: '/hamburger.jpg',
     restaurant: "The Street",
