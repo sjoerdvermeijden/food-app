@@ -23,19 +23,15 @@ function Burger({
 
   const itemPrice = count * price;
 
-  const cartFunction = (id) => {
+  const cartToggle = (id) => {
     const newList = burgerItems.map((item) => {
       if (item.id === id) {
         item.toggle = !item.toggle;
-        setBurgercount(1)
-      } else {
-        item.toggle = false;
         setBurgercount(1)
       }
       return item;
     });
     setBurgerItems(newList);
-    console.log(burgerItems)
   };
   
   const counterAdd = (id) => {
@@ -47,7 +43,6 @@ function Burger({
       return item;
     });
     setBurgerItems(newList);
-    console.log(burgerItems)
   };
   
   const counterMinus = (id) => {
@@ -63,11 +58,13 @@ function Burger({
 
   const addToCart = (id) => {
 
-    burgerItems.map((item) => {
+    const burgerList = burgerItems.map((item) => {
       if (id === item.id) {
-        item.toggle = !item.toggle
+        item.toggle = false
       }
+      return item;
     })
+    setBurgerItems(burgerList)
 
     if (cartItems.length > 0) {
       if (cartItems.find((item) => id === item.id)) {
@@ -80,6 +77,7 @@ function Burger({
     } else {
       setCartItems([{ id, name, price, description, restaurant, count }]);
     }
+
     setCartTotal(cartTotal + count * price);
   };
 
@@ -105,7 +103,7 @@ function Burger({
                 <p className="burger__description">{description}</p>
                 <div
                   className="burger__cart-toggle"
-                  onClick={(e) => cartFunction(id)}
+                  onClick={(e) => cartToggle(id)}
                 >
                   <span></span>
                   <span></span>
@@ -156,7 +154,7 @@ function Burger({
               <p className="burger__description">{description}</p>
               <div
                 className="burger__cart-toggle"
-                onClick={(e) => cartFunction(id)}
+                onClick={(e) => cartToggle(id)}
               >
                 <span></span>
                 <span></span>
