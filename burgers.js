@@ -6,7 +6,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -18,6 +18,20 @@ export const Burgers = [
           {
             topping: 'chicken',
             price: 0.50,
+          }
+        ],
+        drinks: [
+          {
+            name: 'cola',
+            price: 1.25
+          },
+          {
+            name: 'pepsi',
+            price: 1.25
+          },
+          {
+            name: 'beer',
+            price: 1.25
           }
         ]
       }
@@ -45,7 +59,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -84,7 +98,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -97,6 +111,20 @@ export const Burgers = [
             topping: 'chicken',
             price: 0.50,
           },
+        ],
+        drinks: [
+          {
+            name: 'cola',
+            price: 1.25
+          },
+          {
+            name: 'pepsi',
+            price: 1.25
+          },
+          {
+            name: 'beer',
+            price: 1.25
+          }
         ]
       }
     ],
@@ -124,7 +152,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -164,7 +192,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -204,7 +232,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -244,7 +272,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -283,7 +311,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -330,7 +358,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -370,7 +398,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -409,7 +437,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -448,7 +476,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -487,7 +515,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -526,7 +554,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -565,7 +593,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -613,7 +641,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -652,7 +680,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -739,7 +767,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -778,7 +806,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -816,7 +844,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -855,7 +883,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -894,7 +922,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -933,7 +961,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -1012,7 +1040,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -1083,7 +1111,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -1154,7 +1182,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -1202,7 +1230,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,
@@ -1241,7 +1269,7 @@ export const Burgers = [
     count: 1,
     additives: [
       {
-        toppins: [
+        toppings: [
           {
             topping: 'pepperoni',
             price: 0.50,

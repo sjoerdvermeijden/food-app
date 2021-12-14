@@ -1,22 +1,16 @@
 import styled from "styled-components";
 
 export const BurgerWrapper = styled.div`
-  background: var(--lightgray);
-
   .burger {
-    @root: &;
-
     position: relative;
     display: flex;
-    align-items: flex-start;
-    padding: 20px;
+    flex-direction: column;
+    flex-grow: 1;
+    background: var(--lightgray);
 
     &.toggled {
-
       .burger__cart-toggle {
-
         span {
-
           &:nth-child(1) {
             transform: rotate(-45deg);
           }
@@ -24,11 +18,8 @@ export const BurgerWrapper = styled.div`
           &:nth-child(2) {
             transform: rotate(45deg);
           }
-
         }
-
       }
-
     }
 
     &__title,
@@ -38,7 +29,12 @@ export const BurgerWrapper = styled.div`
       &:not(:last-child) {
         margin-bottom: 10px;
       }
+    }
 
+    &__content {
+      display: flex;
+      align-items: flex-start;
+      padding: 20px;
     }
 
     &__image {
@@ -49,7 +45,6 @@ export const BurgerWrapper = styled.div`
       &:not(:last-child) {
         margin-right: 20px;
       }
-
     }
 
     &__price {
@@ -65,7 +60,6 @@ export const BurgerWrapper = styled.div`
       &:not(:last-child) {
         margin-right: 8px;
       }
-
     }
 
     &__location {
@@ -92,11 +86,10 @@ export const BurgerWrapper = styled.div`
         width: 12px;
         height: 1px;
         background: var(--darkgray);
-        
+
         &:nth-child(2) {
           transform: rotate(90deg);
         }
-        
       }
 
       &:hover,
@@ -117,51 +110,50 @@ export const BurgerWrapper = styled.div`
       display: flex;
     }
 
-  }
-
-  .burger-cart {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 20px;
-    background: var(--gray);
-
-    &__inner {
-      display: flex;
-      align-items: center;
-      width: 400px;
+    &__checkout {
+      background: var(--gray);
+      padding: 20px;
     }
 
-    &__container {
-      display: flex;
-      align-items: center;
+    .burger-checkout {
+      &__inner {
+        width: 400px;
+        margin: 0 auto;
 
-      &:not(:last-child) {
-        margin-right: 15px;
+        .burger-cart {
+          display: flex;
+
+          &__container {
+            display: flex;
+            align-items: center;
+
+            &:not(:last-child) {
+              margin-right: 15px;
+            }
+
+            button {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 35px;
+              height: 35px;
+            }
+          }
+
+          &__add-to-cart {
+            background: var(--red);
+            font-weight: bold;
+            font-size: 16px;
+            flex-grow: 1;
+          }
+
+          &__count {
+            display: inline-block;
+            color: var(--darkgray);
+            padding: 3px 10px;
+          }
+        }
       }
-
-      button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 35px;
-        height: 35px;
-      }
-
     }
-
-    &__add-to-cart {
-      background: var(--red);
-      font-weight: bold;
-      font-size: 16px;
-      flex-grow: 1;
-    }
-
-    &__count {
-      display: inline-block;
-      color: var(--darkgray);
-      padding: 3px 10px;
-    }
-
   }
 `;
