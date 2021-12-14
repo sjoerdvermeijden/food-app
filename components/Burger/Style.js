@@ -153,6 +153,56 @@ export const BurgerWrapper = styled.div`
             padding: 3px 10px;
           }
         }
+
+        .burger-toppings {
+
+          &:not(:last-child) {
+            margin-bottom: 20px;
+          }
+
+          &__label {
+            display: inline-block;
+            font-size: 14px;
+
+            &:not(:last-child) {
+              margin-bottom: 10px;
+            }
+          }
+
+          &__list {
+          }
+          
+          &__topping {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            
+            &:not(:last-child) {
+              margin-bottom: 5px;
+            }
+
+          }
+
+          &__title {
+
+            &:not(:last-child) {
+              margin-right: 10px;
+            }
+
+          }
+
+          &__price {
+            
+          }
+
+          &__check {
+            margin-top: 1px;
+            
+            &:not(:last-child) {
+              margin-right: 10px;
+            }
+          }
+        }
       }
     }
   }

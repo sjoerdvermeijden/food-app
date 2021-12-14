@@ -120,21 +120,38 @@ function Burger({
               <div className="burger__checkout">
                 <div className="burger-checkout">
                   <div className="burger-checkout__inner">
-                    <div className="burger-toppings">
-                      {Object.keys(additives).map((key) => {
-                        return (
-                          <ul key={key}>
-                            {additives.map((additive) =>
-                              additive.toppings.map((topping) => {
-                                return (
-                                  <li key={Math.random()}>{topping.topping}</li>
-                                );
-                              })
-                            )}
-                          </ul>
-                        );
-                      })}
-                    </div>
+                    {Object.keys(additives).map((key) => {
+                      return (
+                        <>
+                          <div className="burger-toppings">
+                            <span className="burger-toppings__label">Extra ingredienten:</span>
+                            <ul className="burger-toppings__list" key={key}>
+                              {additives.map((additive) =>
+                                additive.toppings.map((topping) => {
+                                  return (
+                                    <li
+                                      key={Math.random()}
+                                      className="burger-toppings__topping"
+                                    >
+                                      <input
+                                        type="checkbox"
+                                        className="burger-toppings__check"
+                                      />
+                                      <div className="burger-toppings__title">
+                                        {topping.topping}
+                                      </div>
+                                      <div className="burger-topping__price">
+                                        (+ €{topping.price})
+                                      </div>
+                                    </li>
+                                  );
+                                })
+                              )}
+                            </ul>
+                          </div>
+                        </>
+                      );
+                    })}
                     <div className="burger-cart">
                       <div className="burger-cart__container">
                         <button
