@@ -196,7 +196,7 @@ export const BurgerWrapper = styled.div`
           }
 
           &__check {
-            margin-top: 1px;
+            margin-top: 2px;
             
             &:not(:last-child) {
               margin-right: 10px;
